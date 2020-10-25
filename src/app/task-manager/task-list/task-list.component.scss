@@ -1,0 +1,42 @@
+.tasks {
+  .sortable {
+    background: #eee;
+    border-radius: 0.25rem;
+    min-height: 40px;
+    &.empty::after {
+      content: "Empty";
+      text-align: center;
+      vertical-align: middle;
+      line-height: 30px;
+      color: #b7b7b7;
+    }
+  }
+  .card {
+    background-color: #ccdce6;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    min-height: 33px;
+    position: relative;
+    overflow: hidden;
+    .card-content {
+      background-color: #fff;
+      padding: 6px 8px;
+      min-height: 33px;
+    }
+    .delete-icon {
+      display: none;
+    }
+    &:hover .delete-icon {
+      display: block;
+      float: right;
+      color: #c3c3c3;
+      cursor: pointer;
+      margin-left: 2rem;
+      text-decoration: none !important;
+      &:hover {
+        color: #f95454;
+      }
+    }
+  }
+}

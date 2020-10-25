@@ -1,0 +1,27 @@
+@import "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css";
+@import "https://use.fontawesome.com/releases/v5.6.3/css/all.css";
+
+@import "assets/themes/default.scss"; 
+
+ .clearfix:after {
+  content: ".";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+body{
+  background-color: var(--background-color);
+  background-repeat: repeat;
+  background-position: center;
+}
+
+.modal-content {
+  .modal-header, .modal-footer{
+    padding: 0.40rem;
+  }
+  .btn {
+    padding: .175rem .45rem;
+  }
+}
