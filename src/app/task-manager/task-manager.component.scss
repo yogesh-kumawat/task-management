@@ -1,0 +1,86 @@
+.task-manager {
+  margin: 10px 0;
+  .add-list {
+    margin-top: 6px;
+    a {
+      margin-left: 2rem;
+    }
+  }
+  .delete-icon {
+    float: right;
+    color: #c3c3c3;
+    cursor: pointer;
+    margin-left: 2rem;
+    text-decoration: none !important;
+    &:hover {
+      color: #f95454;
+    }
+  }
+  .header {
+    overflow: auto;
+    padding-bottom: 1rem;
+    color: #222;
+    .title {
+      float: left;
+      h3 {
+        font-size: 1.25rem;
+        letter-spacing: 1px;
+        margin: 0;
+      }
+    }
+  }
+  .title {
+    h3 {
+      background: #8f7bc2;
+      border-radius: 6px;
+      color: white;
+      padding: 9px 15px;
+    }
+  }
+  .task-board {
+    .add-list {
+      background: #8f7bc2;
+      border-radius: 6px;
+      color: white;
+      padding: 9px 15px;
+    }
+    min-width: 1000px;
+    overflow: auto;
+    .lists {
+      margin: 0 10px 5px 0;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      .list {
+        background-color: #e5eff5;
+        border-radius: 1px;
+        box-shadow: 0, 2px, 4px, rgba(0, 0, 0, 0.5);
+        padding: 8px;
+        border: 1px solid #74727e;
+        margin: 10px;
+        width: 25%;
+        min-width: 200px;
+        max-width: 300px;
+        h5 {
+          font-size: 1rem;
+          letter-spacing: 0.5px;
+          margin: 0 0 8px 3px;
+        }
+        .card {
+          background-color: #ccdce6;
+          border-radius: 4px;
+          font-size: 0.9rem;
+          margin-bottom: 8px;
+          min-height: 33px;
+          position: relative;
+          overflow: hidden;
+          .card-content {
+            background-color: #fff;
+            padding: 6px 8px;
+            min-height: 33px;
+          }
+        }
+      }
+    }
+  }
+}
